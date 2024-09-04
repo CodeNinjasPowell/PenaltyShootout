@@ -9,10 +9,21 @@ public class BallCollision : MonoBehaviour
 	public SceneLoader sl;
 	public GameObject gameoverScreen;
 	public AudioManager am;
+	public GameObject pauseScreen;
+	public ArrowScript arrowScript;
 
 	void Start()
 	{
 		gameoverScreen.SetActive(false);
+		pauseScreen.SetActive(false);
+	}
+
+	private void Update()
+	{
+		if (Input.GetButtonDown("Cancel"))
+		{
+			TogglePause();
+		}
 	}
 
 	private void OnCollisionEnter(Collision collision)
@@ -32,5 +43,12 @@ public class BallCollision : MonoBehaviour
 			am.StopSound("crowd");
 			am.PlaySound("boo");
 		}
+	}
+
+	public void TogglePause()
+	{
+		print("pause");
+		pauseScreen.SetActive(!pauseScreen.activeInHierarchy);
+		arrowScript.isPaused = pauseScreen.activeInHierarchy;
 	}
 }

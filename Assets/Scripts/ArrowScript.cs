@@ -25,6 +25,9 @@ public class ArrowScript : MonoBehaviour
 	public float rotSpeedZ;
 	private float currRotZ;
 
+	//[HideInInspector]
+	public bool isPaused;
+
 	private bool horizontalDone;
 	private bool ballShot;
 
@@ -34,6 +37,7 @@ public class ArrowScript : MonoBehaviour
 		currRotZ = 0f;
 		horizontalDone = false;
 		ballShot = false;
+		isPaused = false;
 	}
 
 	void Update()
@@ -58,7 +62,7 @@ public class ArrowScript : MonoBehaviour
 				//Debug.Log(currRotY);
 			}
 
-			if (Input.GetButtonDown("Shoot") || Input.GetMouseButtonDown(0))
+			if ((Input.GetButtonDown("Shoot") || Input.GetMouseButtonDown(0)) && !isPaused)
 			{
 				currRotY = 0f;
 				currRotZ = rotSpeedZ;
@@ -82,14 +86,13 @@ public class ArrowScript : MonoBehaviour
 				//Debug.Log("space");
 			}
 
-			if (Input.GetButtonDown("Shoot") || Input.GetMouseButtonDown(0))
+			if ((Input.GetButtonDown("Shoot") || Input.GetMouseButtonDown(0)) && !isPaused)
 			{
 				//Debug.Log("Shoot");
 				currRotZ = 0f;
 				ballShot = true;
 
 				rb.isKinematic = false;
-				// I don't know what I did but, it works now. :)
 				Vector3 force = child.transform.position - transform.position;
 				force = force.normalized;
 				force = force * speed;
@@ -103,6 +106,16 @@ public class ArrowScript : MonoBehaviour
 		}
 
 		transform.Rotate(new Vector3(0, currRotY * Time.deltaTime, currRotZ * Time.deltaTime));
+
+		if(isPaused == true)
+		{
+			rotSpeedY = 0;
+			rotSpeedZ = 0;
+		} else if(isPaused == false)
+		{
+			rotSpeedY = 75;
+			rotSpeedZ = 50;
+		}
 	}
 
 }
