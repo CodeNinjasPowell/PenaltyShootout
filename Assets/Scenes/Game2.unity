@@ -206,6 +206,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5770987619822754186, guid: 5596382b57408d346afb7109bf8a149f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1202.969
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770987619822754186, guid: 5596382b57408d346afb7109bf8a149f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.928
+      objectReference: {fileID: 0}
     - target: {fileID: 8238002413036626205, guid: 5596382b57408d346afb7109bf8a149f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Game2

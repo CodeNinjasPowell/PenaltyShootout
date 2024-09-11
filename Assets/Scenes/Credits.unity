@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 1235771737}
   - component: {fileID: 1235771736}
   m_Layer: 5
-  m_Name: Level1Text
+  m_Name: MenuText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -612,10 +612,10 @@ RectTransform:
   m_Father: {fileID: 1598490652}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 100.5}
+  m_SizeDelta: {x: 428, y: 201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1235771736
 MonoBehaviour:
@@ -838,9 +838,9 @@ RectTransform:
   m_Father: {fileID: 589603093}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -433}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 428.47644, y: 200.70728}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1598490653

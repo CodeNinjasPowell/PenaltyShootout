@@ -303,7 +303,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.033733945, y: -0.72306037, z: 0.035398893, w: 0.68905205}
+  m_LocalRotation: {x: 0.033733957, y: -0.72306037, z: 0.035398908, w: 0.689052}
   m_LocalPosition: {x: 29.43, y: 2.15, z: 4.1099997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -592,7 +592,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891038754}
-  m_LocalRotation: {x: 0.033733945, y: -0.72306037, z: 0.035398893, w: 0.68905205}
+  m_LocalRotation: {x: 0.033733957, y: -0.72306037, z: 0.035398908, w: 0.689052}
   m_LocalPosition: {x: 29.43, y: 2.15, z: 4.1099997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -654,6 +654,14 @@ PrefabInstance:
     - target: {fileID: 1160593901736095146, guid: 5596382b57408d346afb7109bf8a149f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770987619822754186, guid: 5596382b57408d346afb7109bf8a149f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1197.114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770987619822754186, guid: 5596382b57408d346afb7109bf8a149f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6461134112166519707, guid: 5596382b57408d346afb7109bf8a149f, type: 3}
       propertyPath: ballPos
